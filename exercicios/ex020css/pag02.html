@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo hover</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div > ul{
+        display: none;
+    }
+
+    div:hover > ul{
+        border: 1px solid red;
+        display: block;
+        background-color: rgb(0, 0, 0);
+        color: rgb(235, 235, 235);
+        width: 90px;
+        height: 110px;
+    }
+
+    div:hover{
+        color: rgb(0, 255, 30);
+    }
+
+</style>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div> 
+        passe o mouse aqui
+        <ul>
+           <a href="https://www.internacional.com.br/">
+               <li>opção 1</li> <br>
+           </a>
+           <a href="https://www.flamengo.com.br/">
+               <li>opção 2</li> <br>
+           </a>
+           <a href="https://www.spfcticket.net/">
+               <li>opção 3</li>
+           </a>
+        </ul>
+
+    </div>
+</body>
+</html>

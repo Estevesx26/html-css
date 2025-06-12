@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Protest+Riot&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kablammo&family=Protest+Riot&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body#piramides{
+    background-image: linear-gradient(to right,#E5C400, #665E33 );
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+h1#principal{
+    font-family: "Kablammo", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+}
+
+p{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+main{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+main#toppiramide{
+    background-image: linear-gradient(to left, #33322B, #877900, #3C3928);
+}
+
+p#paragrafoum{
+    color: #fff4a0;
+}
+
+div#linkpag{
+    text-align: end;
+}
+
+div{
+    text-align: center;
+}
+
+a{
+    text-align: end;
+}
+
+div.links{
+    text-align: end;
+}
+
+body#lobos{
+    background-image: linear-gradient(to right, #A397A6, #293040);
+}
+
+main#lobosmain{
+    background-image:linear-gradient(to right, #0D0B0C, #6386d7);
+}
+
+main p{
+    color: aliceblue;
+} 
+
+h2#letrah{
+    color: #ADBCD9;
+}
+    
+h1#titulolobos{
+    color: #0D0B0C;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body#terremotos{
+    background-image: linear-gradient(to right, #BFB6AE, #403B39);
+}
+
+h1#tituloterremoto{
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2#maiorterremoto{
+    color: #0D0D0D;
+}
+
+a#continueum{
+    color:#b89700;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #0D0B0C;
+}
+
+a#continueum:hover{
+    color: #0D0B0C;
+    text-decoration: underline;
+}
+
+a:active{
+    color: #b89700;
+}
+
+a#continuedois{
+    color: black;
+    text-decoration: none;
+}
+
+a#continuedois:hover{
+    color:white ;
+    text-decoration: underline;
+}
+
+a#continuetres{
+    color: rgb(50, 37, 0);
+    text-decoration: none;
+}
+
+a#continuetres:hover{
+    color: white;
+    text-decoration: underline;
+}
