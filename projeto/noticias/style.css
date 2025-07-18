@@ -1,0 +1,155 @@
+@charset  "UF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #9b8ba6;
+}
+
+header{
+    background-color: #4f0061;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1{
+    color: #ffd000;
+}
+
+header p{
+    color: #ffffff;
+}
+
+nav{
+    background-color: #9e30ff;
+    margin-bottom: 50px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    background-color: #9e30ff;
+}
+
+li{
+    position: relative;
+    display: inline-block;
+}
+
+li a{
+    display: block;
+    padding: 10px;
+    background-color: #9e30ff;
+    color: white;
+    text-decoration: none;
+    transition-duration: .5s;
+    text-align:center ;
+}
+
+li:hover > a{
+    color: #ffd000;
+    border-radius: 2px;
+    background-color: #110017;
+}
+
+li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: auto;
+}
+
+li:hover > ul{
+    display: block;
+}
+
+li ul li{
+    display: block;
+}
+
+main{
+    background-color: #110017;
+    color: white;
+    border-radius: 15px;
+    margin: auto;
+    min-width: 200px;
+    max-width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+main > h1{
+    margin: 30px;
+}
+
+div.um{
+    height: 200px;
+    width: 200px;
+    background-color: #9b8ba6;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 5px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+div#piramides > a{
+    background-color: #ffd000;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+div#triangulo > a{
+    background-color: #0011ff;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+div#universo > a{
+    background-color: #0c0038;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+article{
+    margin: 40px;
+}
+
+article > p{
+    margin: 20px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.6em;
+    font-size: 1.2em;
+}
+
+
+footer{
+    background-color: #110017;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
