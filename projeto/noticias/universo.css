@@ -22,3 +22,17 @@ header{
     color: white;
     text-align: center;
 }
+
+nav{
+    color: white;
+    background-image: linear-gradient(to right, var(--cor2), black);
+}
+
+div{
+    display: inline-block;
+}
+
+main{
+    margin: 40px;
+    background-color: rgb(188, 188, 255);
+}

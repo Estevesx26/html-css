@@ -128,7 +128,7 @@ div#universo{
 }
 
 div#piramides > a{
-    background-image: linear-gradient(to bottom, #B8860B, #3D332F);
+    background-image: linear-gradient(to bottom, #B8860B, #3d332f4a);
     border: 2px solid #E1C16E;
     position: absolute;
     bottom: 10px;
@@ -141,12 +141,12 @@ div#piramides > a{
 }
 
 div#piramides > a:hover{
-    color: #E1C16E;
+    color: white;
     border: 2px solid #1C1B21;
 }
 
 div#setembro > a{
-    background-image: linear-gradient(to bottom, #3C3C3C, #BFBFBF);
+    background-image: linear-gradient(to bottom, #3C3C3C, #bfbfbf44);
     border: 2px solid #3C3C3C;
     position: absolute;
     bottom: 10px;
@@ -164,7 +164,7 @@ div#setembro > a:hover{
 }
 
 div#universo > a{
-    background-image: linear-gradient(to bottom, #8e27d3, #543ee3);
+    background-image: linear-gradient(to bottom, #9370db, #4c008262);
     border: 2px solid #1B263B;
     position: absolute;
     bottom: 10px;
@@ -180,6 +180,7 @@ div#universo > a:hover{
     
     color: white;
     border: 2px solid black;
+    
 }
 
 article{
