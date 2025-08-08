@@ -24,15 +24,291 @@ header{
 }
 
 nav{
-    color: white;
-    background-image: linear-gradient(to right, var(--cor2), black);
+    background-image: url('imagens/navsolar.jpg'); 
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: local;
+    background-repeat: no-repeat;
+
+    padding: 65px;
 }
 
-div{
-    display: inline-block;
+h1{
+    text-align: center;
+    color: white;
 }
+
+h1.titulo{
+    background-image: linear-gradient(to bottom, var(--cor3), black);
+    color: white;
+    border-radius: 35px;
+    border: 5px solid white;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+h1:hover.titulo{
+    background-image: linear-gradient(to bottom, rgba(242, 0, 255, 0.289), rgb(255, 255, 255));
+    color: black;
+    border: 5px solid rgb(54, 0, 54);
+}
+
 
 main{
-    margin: 40px;
-    background-color: rgb(188, 188, 255);
+    background-image: linear-gradient(to right, rgb(0, 0, 46), black, rgb(0, 0, 56));
+    border-radius: 2px;
+    margin: auto;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 800px;
+}
+
+header h1{
+    text-align: center;
+    margin: 30px;
+}
+
+header p{
+    text-align: center;
+    margin: 20px;
+}
+
+section{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor6));
+    color: rgb(167, 197, 223);
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 10px rgb(0, 0, 0);
+    border: 5px solid rgba(0, 0, 0, 0.332);
+    padding: 40px;
+    width: 350px;
+    margin: auto;
+}
+
+div.principal{
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
+
+div.item{
+    display: inline-block;
+    display: block;
+    position: relative;
+    background-color: azure;
+    border-radius: 10px;
+    border: 3px solid rgb(167, 197, 223);
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+div.texto{
+    position: absolute;
+    display: none;
+    z-index: 5;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 5px solid rgba(167, 197, 223);
+    padding: 5px;
+    top: 130%;
+    left: 0;
+    width: 220px;
+
+}
+
+div.item:hover .texto{
+    display: block;
+    width: auto;
+    z-index: 5px;
+}
+
+main#sol{
+    background-image: url('imagens/sol.jpg');
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#mercurio{
+    background-image: url('imagens/mercurioo.jpg');
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#venus{
+    background-image: url('imagens/venus.jpg');
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#terra{
+    background-image: url('imagens/terra.jpg');
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#marte{
+    background-image: url('imagens/marte1.webp');
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#jupiter{
+    background-image: url('imagens/jupiter.jpg');
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#saturno{
+    background-image: url('imagens/saturno.jpg');
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#urano{
+    background-image: url('imagens/urano.jpg');
+    background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main#netuno{
+    background-image: url('imagens/netuno.jpg');
+    background-color: black;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 700px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    border-radius: 20px;
+}
+
+main > article{
+    background-color: rgba(0, 0, 0, 0.215);
+    color: white;
+    width: 200px;
+    height: auto;
+}
+
+article{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+article h1{
+    margin-bottom: 10px;
+}
+
+article p{
+    font-size: 1.1em;
+    font-weight: 2px;
+    line-height: 1.2em;
+}
+
+footer{
+    text-align: center;
+}
+
+footer{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor6));
+}
+
+footer p{
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: white;
+}
+
+a:hover > img{
+    background-color: #9b8ba6;
+    border-radius: 5px;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+strong:hover{
+    color: #f2ff00;
 }
