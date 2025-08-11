@@ -83,7 +83,7 @@ section{
     border: 5px solid rgba(0, 0, 0, 0.332);
     padding: 40px;
     max-width: 350px;
-    min-width: auto;
+    min-width: 200px;
     margin: auto;
 }
 
