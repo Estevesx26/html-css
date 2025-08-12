@@ -5,6 +5,10 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 :root{
     --cor1: #0D0D0D;
     --cor2: #0A0F3C;
@@ -12,6 +16,9 @@
     --cor4: #4B0A0A;
     --cor5: #1B263B;
     --cor6: #3D1A54;
+
+    --fonte-destaque1: 'Finger Paint',cursive;
+    --font-destaque2: 'Roboto Mono', cursive;
 }
 
 body{
@@ -36,7 +43,8 @@ nav{
 
 h1{
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: var(--fonte-destaque1);
 }
 
 h1.titulo{
@@ -73,6 +81,7 @@ header h1{
 header p{
     text-align: center;
     margin: 20px;
+    font-family: var(--font-destaque2);
 }
 
 section{
@@ -85,6 +94,8 @@ section{
     max-width: 350px;
     min-width: 200px;
     margin: auto;
+
+    font-family: var(--fonte-destaque1);
 }
 
 div.principal{
@@ -271,6 +282,8 @@ main > article{
     color: white;
     width: 200px;
     height: auto;
+
+    font-family: var(--font-destaque2);
 }
 
 article{
