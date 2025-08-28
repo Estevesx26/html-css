@@ -9,6 +9,7 @@
             margin: auto;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption{
@@ -16,6 +17,12 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgrey;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+             background-color: rgb(108, 108, 108);
         }
 
         td, th{
@@ -26,6 +33,14 @@
         thead, tfoot{
             background-color: rgb(108, 108, 108);
             color: white;
+        }
+
+        tbody > tr:nth-child(odd){
+                background-color: rgb(255, 255, 255);
+        }
+
+        tbody > tr:nth-child(even){
+            background-color:lightgray;
         }
 
         td.num{
@@ -162,5 +177,6 @@
             <td class="num"><strong>212.583.750</strong></td>
         </tfoot>
     </table>
+    
 </body>
 </html>
