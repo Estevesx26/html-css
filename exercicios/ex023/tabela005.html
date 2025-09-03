@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        tr,th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .nome{
+            background-color: aqua;
+        }
+
+        .grupo{
+            background-color: chartreuse;
+        }
+
+        .prof{
+            background-color: darkkhaki;
+        }
+
+        .futuro{
+            background-color: rgb(73, 0, 80);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabelas</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="nome">
+            <col class="grupo" span="2">
+            <col class="prof">
+
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr class="futuro">
+            <td>Emmanuel</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>Beatriz</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Veterinaria</td>
+        </tr>
+        <tr>
+            <td>Luana</td>
+            <td>F</td>
+            <td>38</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Renan</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Vendedor</td>
+        </tr>
+    </table>
+</body>
+</html>
