@@ -6,49 +6,41 @@
 }
 
 :root{
-    /*Pagina principal*/
-    --cor0: #8921A6;
-    --cor1: #9e30ff;
-    --cor2: #1E0640;
-    --cor3: #110017;
-    --cor4: #9b8ba6;
-
-    --cor5: #6A0DAD;
-    --cor6: #2D014D;
-    --cor7: #FFC857;
-    --cor8: #E6E0EC;
-    --cor9: #2D014D;
-    --cor10:#FFD97D;
-}   
+    --cor1:#000000;
+    --cor2:#FFFFFF;
+    --cor3:#370061;
+    --cor4:#8700F5;
+    --cor5:#B900E5;
+}
 
 body{
-    background-image: linear-gradient(to right, var(--cor4), var(--cor8));
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor5), var(--cor6));
-    padding: 40px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    color: #FFFFFF;
+    padding: 35px;
     text-align: center;
 }
 
-header h1{
-    color: var(--cor7);
+header > h1{
+    font-size: 3.5em;
+    padding-bottom: 20px;
 }
 
-header p{
-    color: #ffffff;
+header > p{
+    font-size: 1.1em;
 }
 
 nav{
-    background-color: #9e30ff;
-    margin-bottom: 50px;
+    background-color: #000000;
 }
 
 ul{
     list-style: none;
     padding: 0px;
     margin: 0px;
-    background-color: #8921A6;
 }
 
 li{
@@ -66,10 +58,7 @@ li a{
 }
 
 li:hover > a{
-    color: #ffd000;
-    border-radius: 2px;
-    background-color: #110017;
-    
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
 }
 
 li ul{
@@ -85,141 +74,6 @@ li:hover > ul{
 
 li ul li{
     display: block;
+    background-color: #000000;
 }
 
-main{
-    background-color: var(--cor9);
-    color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 12px rgba (0,0,0,0,3);
-    margin: auto;
-    min-width: 200px;
-    max-width: 800px;
-    height: auto;
-    text-align: center;
-}
-
-main > h1{
-    margin: 30px;
-}
-
-div.um{
-    height: 200px;
-    width: 200px;
-    background-color: #9b8ba6;
-    display: inline-block;
-    margin: 20px;
-    text-align: center;
-    border-radius: 20px;
-    border: 4px solid rgb(255, 255, 255);
-    position: relative;
-}
-
-div#piramides{
-    background-image: url('imagens/piramides.jpg');
-}
-
-div#setembro{
-    background-image: url('imagens/setembro.png');
-}
-
-div#universo{
-    background-image: url('imagens/universo.png');
-}
-
-div#piramides > a{
-    background-image: linear-gradient(to bottom, #B8860B, #3d332f4a);
-    border: 2px solid #E1C16E;
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    right: 15px;
-    border-radius: 20px;
-    padding: 5px;
-    text-decoration: none;
-    color: #1C1B21;
-}
-
-div#piramides > a:hover{
-    color: white;
-    border: 2px solid #1C1B21;
-}
-
-div#setembro > a{
-    background-image: linear-gradient(to bottom, #3C3C3C, #bfbfbf44);
-    border: 2px solid #3C3C3C;
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    right: 15px;
-    border-radius: 20px;
-    padding: 5px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-div#setembro > a:hover{
-    color: white;
-    border: 2px solid black;
-}
-
-div#universo > a{
-    background-image: linear-gradient(to bottom, #9370db, #4c008262);
-    border: 2px solid #1B263B;
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    right: 15px;
-    border-radius: 20px;
-    padding: 5px;
-    text-decoration: none;
-    color: black;
-}
-
-div#universo > a:hover{
-    
-    color: white;
-    border: 2px solid black;
-    
-}
-
-article{
-    margin: 40px;
-}
-
-article > p{
-    margin: 20px;
-    text-align: justify;
-    text-indent: 20px;
-    line-height: 1.6em;
-    font-size: 1.2em;
-}
-
-
-footer{
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center;
-    background-image: linear-gradient(to top, var(--cor5), var(--cor6));
-}
-
-footer p{
-    margin-bottom: 10px;
-    font-size: 1.1em;
-    color: white;
-}
-
-a:hover > img{
-    background-color: #9b8ba6;
-    border-radius: 5px;
-}
-
-strong{
-    text-decoration: underline;
-}
-
-strong:hover{
-    color: #f2ff00;
-}
