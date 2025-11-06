@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario05</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>sexo</legend>
+
+            <p>
+                <input type="radio" name="sexo" id="imas" value="m"> <label for="imas">Masculino</label>
+            </p>
+
+            <p>
+                <input type="radio" name="sexo" id="ifem" value="f">
+                <label for="ifem">Feminino</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esporte favoritos</legend>
+            
+            <p><input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label></p>
+
+            <p><input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label></p>
+
+            <p><input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label></p>
+
+            <p><input type="checkbox" name="ten" id="iten"> <label for="iten">Tênis</label></p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Jogos Preferidos</legend>
+
+            <p>
+                <input type="checkbox" name="jogos" id="icod">
+                <label for="icod">Call of Duty</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="jogos" id="ififa">
+                <label for="ififa">EA FC 26</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="jogos" id="idazy">
+                <label for="idazy">DayZ</label>
+            </p>
+
+            <p>
+                <input type="checkbox" name="jogos" id="itlou">
+                <label for="itlou">The Last Of Us</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Console que você tem</legend>
+
+            <p>
+                <input type="radio" name="console" id="ips1">
+                <label for="ips1">PS1</label>
+            </p>
+
+            <P>
+                <input type="radio" name="console" id="ips2">
+                <label for="ips2">PS2</label>
+            </P>
+
+            <P>
+                <input type="radio" name="console" id="ips3">
+                <label for="ips3">PS3</label>
+            </P>
+
+            <P>
+                <input type="radio" name="console" id="ips4">
+                <label for="ips4">PS4</label>
+            </P>
+
+            <P>
+                <input type="radio" name="console" id="ips5">
+                <label for="ips5">PS5   </label>
+            </P>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
