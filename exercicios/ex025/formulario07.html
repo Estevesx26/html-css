@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+
+        <label for="icidade">Cidade</label>
+        <select name="Cidade" id="icidade" required>
+
+            <option value="" disabled selected hidden>Selecione uma cidade</option>
+
+            <optgroup label="Rio grande do sul">
+                <option value="Poa">Porto Alegre</option>
+                <option value="Via">Viamão</option>
+                <option value="Can">Canoas</option>
+                <option value="Ale">Alegrete</option>
+            </optgroup>
+
+            <optgroup label="São Paulo">
+                <option value="Osa">Osasco</option>
+                <option value="Apa">Aparecida</option>
+                <option value="san">Santos</option>
+                <option value="bra">Bragança</option>
+            </optgroup>
+        </select>
+
+        <p>
+            <label for="itimes">Times gaúchos</label>
+            <input type="text" name="times" id="itimes" list="times" required>
+            <datalist id="times">
+                <option value="S.C.Internacional"></option>
+                <option value="Juventude"></option>
+                <option value="Caxias"></option>
+                <option value="Novo Hamburgo"></option>
+                <option value="Inter de santa maria"></option>
+                <option value="Passo fundo"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            <label for="imsn">Mensagem</label><br>
+            <textarea name="mensagem" id="imsn" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+</body>
+</html>
