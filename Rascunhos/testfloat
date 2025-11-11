@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Float</title>
+  <style>
+    img {
+      float: right; /* Faz a imagem ir pro lado direito */
+      width: 150px;
+      margin: 10px;
+    }
+
+    p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <h2>Float em ação</h2>
+  <img src="https://via.placeholder.com/150" alt="Exemplo">
+  <p>
+    Este texto vai se ajustar ao redor da imagem. A propriedade float faz a imagem flutuar à direita,
+    permitindo que o texto ocupe o espaço ao lado dela. Isso é muito usado para criar layouts simples
+    ou alinhar imagens e blocos lado a lado.
+  </p>
+</body>
+</html>
