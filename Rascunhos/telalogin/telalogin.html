@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>telalogin</title>
+
+    <style>
+
+        form{
+            margin: auto;
+            width: 500px;
+            height: 600px;
+            border-radius: 20px;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        img{
+            margin-top:20px;
+            width: 120px;
+            height: 120px;
+        }
+
+        div{
+            height: 250px;
+            border: 3px solid black;
+            border-radius: 20px 20px 0px 0px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        div#login{
+            margin: auto;
+            width: 200px;
+            height: 180px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        p.acesso{
+            text-align: justify;
+            color: white;
+        }
+
+        h1{
+            margin-bottom: -10px;
+        }
+
+        input#entrar{
+            width: 300px;
+            height: 50px;
+            margin: 20px;
+            border-radius: 20px;
+            transition: transform 0.2s;
+        }
+
+        input#entrar:hover{
+            transform: scale(1.1);
+        }
+
+        input.aces{
+            width: 200px;
+            height: 15px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+
+        <div>
+            <img src="iconus.webp" alt="telalogin">
+            <h1>Bem vindo</h1>
+            <p id="fac">Faça login na sua conta</p>
+        </div>
+
+       
+            <div id="login">
+                <p class="acesso"><label for="inome">Nome </label></p>
+                <input type="text" name="Nome" id="inome" class="aces">
+               
+                <p class="acesso"><label for="isenha">Senha </label></p>
+                <input type="password" name="Senha" id="isenha" class="aces">
+
+                <p class="acesso">
+                    <input type="checkbox" name="lembrar" id="ilem">
+                    <label for="ilem">Lembrar da senha</label>
+                </p>
+            </div>
+            
+
+        <p>
+            <input type="submit" value="Entrar" id="entrar">
+           
+        </p>
+    </form>
+</body>
+</html>
