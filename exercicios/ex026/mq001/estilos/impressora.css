@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 100px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
