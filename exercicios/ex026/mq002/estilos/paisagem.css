@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
-/*conf paisagem*/
+/*conf paisagem (landscape)*/
+
+body {
+    background: url(../imagens/cev-landscape.jpg);
+
+}
+
