@@ -1,0 +1,69 @@
+@charset "URF-8";
+
+/*Todas as demais midias*/
+
+/*IMPRESSÃO*/
+@media print{
+    body{
+        background-image: url(../back-print.jpg);
+    }
+
+    #tablet, #pc, #tv, #phone{
+    display: none;
+}
+
+#print{
+    display: block;
+}
+
+main{
+    border: 2px solid black;
+}
+}
+
+/*TABLET*/
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    body{
+        background-image: url(../back-tablet.jpg);
+    }
+
+    #phone, #pc, #tv, #print{
+    display: none;
+}
+
+#tablet{
+    display: block;
+}
+
+}
+
+/*DESKTOP*/
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../back-pc.jpg);
+    }
+
+    #tablet, #phone, #tv, #print{
+    display: none;
+}
+
+#pc{
+    display: block;
+}
+}
+
+/*GRANDES TELAS*/
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../back-tv.jpg);
+    }
+
+    #tablet, #pc, #phone, #print{
+    display: none;
+}
+
+#tv{
+    display: block;
+}
+}
