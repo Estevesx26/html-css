@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*CSS planetas*/
+
+header{
+    background-image: url(../imagens/header-planetas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 150px;
+}
+
+section{
+    background-color:red ;
+}
+
+article{
+    margin-top: 20px;
+    width: 90%;
+}
+
+footer{
+    margin-top: 20px;
+}
