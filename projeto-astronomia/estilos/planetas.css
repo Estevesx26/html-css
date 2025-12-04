@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*CSS planetas*/
+
+header{
+    background-image: url(../imagens/header-planetas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 150px;
+}
+
+#mercurio{
+    background-image: url(../imagens/planeta_mercurio.jpg);
+}
+
+#venus{
+    background-image: url(../imagens/planeta_venus.jpg);
+}
+
+#terra{
+    background-image: url(../imagens/planeta_terra.jpg);
+}
+
+#marte{
+    background-image: url(../imagens/planeta_marte.jpg);
+}
+
+#jupiter{
+    background-image: url(../imagens/planeta_jupiter.jpg);
+}
+
+#saturno{
+    background-image: url(../imagens/planeta_saturno.jpg);
+}
+
+#urano{
+    background-image: url(../imagens/planeta_urano.jpg);
+}
+
+#netuno{
+    background-image: url(../imagens/planeta\ netuno.jpg);
+}
+
+section{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    background-color: rgba(1, 1, 1, 0.389);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.title{
+    background-color: brown;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+article{
+    margin-top: 20px;
+    width: 90%;
+}
+
+footer{
+    margin-top: 20px;
+}
