@@ -9,6 +9,7 @@
 
 body,html{
     height: 100%;
+    color: white;
 }
 
 header{
@@ -116,10 +117,54 @@ article{
 }
 
 article#top{
-    background-color: crimson;
-    width: 90%;
+    background-image: linear-gradient(to right,black, blue);
+    width: 90vw;
     height: auto;
 }
+
+#menvoy{
+     background-image: url(../imagens/Espaconave_Voyager.jpg);
+     margin-bottom: 20px;
+}
+
+#menbur{
+    background-image: url(../imagens/buraco_negro.jpg);
+    margin-bottom: 20px;
+}
+
+#mensol{
+    background-image: url(../imagens/sol.jpg);
+    margin-bottom: 20px;
+}
+
+#mentem{
+    background-image: url(../imagens/espaço-time.jpg);
+    margin-bottom: 20px;
+}
+
+.caixa{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    width: 250px;
+    height: 250px;
+    margin: auto;
+
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.bot{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
 
 
 footer{
