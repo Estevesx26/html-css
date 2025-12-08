@@ -7,14 +7,34 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --cor1: #0D0D0D;
+    --cor2: #0A0F3C;
+    --cor3: #2D014D;
+    --cor4: #4B0A0A;
+    --cor5: #1B263B;
+    --cor6: #3D1A54;
+
+    --fonte-destaque1: 'Finger Paint',cursive;
+    --font-destaque2: 'Roboto Mono', cursive;
+}
+
 body,html{
     height: 100%;
     color: white;
 }
 
 header{
- background-color: black;
+ background-image: url(../imagens/header-planetas-2.jpg);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
  height: 150px;
+ border-bottom: 2px solid rgba(77, 77, 77, 0.467);
 }
 
 header h1{
@@ -90,16 +110,25 @@ nav > ul > li > ul > li > a:hover{
     color: black;
 }
 
+h1{
+    background-color: #0D0D0D;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
 main{
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 section{
-    background-color: rgb(0, 0, 0);
-
     width: 90%;
     height: 90%;
     border-radius: 10px;
@@ -108,17 +137,16 @@ section{
 }
 
 article{
-    background-color: rgba(0, 0, 0, 0.295);
+    background-image: linear-gradient(to right, var(--cor3), black);
     text-align: left;
-    width: 150px;
+    width: 250px;
     padding: 20px;
     margin: auto;
     border-radius: 20px;
 }
 
 article#top{
-    background-image: linear-gradient(to right,black, blue);
-    width: 90vw;
+    width: 70%;
     height: auto;
 }
 
@@ -160,18 +188,68 @@ article#top{
 }
 
 .bot{
+    background-image: linear-gradient(to bottom, var(--cor3), black);
+    text-align: center;
     border-radius: 10px;
+    margin-bottom: 20px;
     padding: 10px;
-    margin: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: 2px solid white;
 }
 
+.bot:hover{
+    background-image: linear-gradient(to bottom, white, var(--cor3));
+    color: black;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+}
+
+#subimg{
+    background-image: linear-gradient(to bottom, var(--cor3), black);
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.527);
+}
 
 
 footer{
-    background-color: black;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 20px;
     text-align: center;
+    background-color: #2d014ddc;
+    border-top: 2px solid rgba(77, 77, 77, 0.467);
 }
+
+footer > p{
+    margin-bottom: 5px;
+}
+
+footer > a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+footer > a:hover{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
 
 
 

@@ -1,8 +1,22 @@
 @charset "UTF-8";
 
-body{
-    background-image: linear-gradient(to right, black, blue);
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --cor1: #0D0D0D;
+    --cor2: #0A0F3C;
+    --cor3: #2D014D;
+    --cor4: #4B0A0A;
+    --cor5: #1B263B;
+    --cor6: #3D1A54;
+
+    --fonte-destaque1: 'Finger Paint',cursive;
+    --font-destaque2: 'Roboto Mono', cursive;
 }
+
+
 
 header{
     background-position: center center;
@@ -74,12 +88,7 @@ article{
 }
 
 .just{
-    
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
+    background-color: #0D0D0D;
     width: 85%;
     margin: auto;
     margin-top: 20px;
