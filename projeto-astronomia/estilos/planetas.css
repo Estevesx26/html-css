@@ -81,7 +81,7 @@ section{
 }
 
 .text{
-    background-color: rgba(1, 1, 1, 0.327);
+    background-color: rgba(1, 1, 1, 0.588);
     color: white;
     text-align: left;
     line-height: 1.3em;
@@ -91,6 +91,8 @@ section{
     width: 200px;
     margin-left: 10px;
 }
+
+.textarticle
 
 .title{
     background-image: linear-gradient(to bottom, var(--cor3), black);
@@ -112,7 +114,6 @@ section{
     border: 2px solid white;
 }
 
-/* texto começa escondido */
 .textmenu {
     background-color: #f3f3f3;
     color: black;

@@ -80,6 +80,15 @@ section{
     margin-right: 10px;
 }
 
+h2{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
 article{
     background-color: darkkhaki;
     width: 80%;
@@ -95,10 +104,10 @@ article{
 }
 
 .title{
-    background-color: deepskyblue;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor1));
     margin:20px auto;
     padding: 5px;
-    width: 150px;
+    width: 50%;
     text-align: center;
     border-radius: 20px;
     border: 3px solid black;
@@ -110,6 +119,28 @@ article{
     font-size: 1.2em;
     height: auto;
 }
+
+.textarticle{
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 #sol{
     background-image: url(../imagens/sol.jpg);

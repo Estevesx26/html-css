@@ -121,6 +121,11 @@ h1{
 }
 
 main{
+    background-image: url(../imagens/estrelas_body.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     height: 500px;
     display: flex;
     justify-content: center;
@@ -137,7 +142,7 @@ section{
 }
 
 article{
-    background-image: linear-gradient(to right, var(--cor3), black);
+    background-color: #0D0D0D;
     text-align: left;
     width: 250px;
     padding: 20px;
@@ -146,8 +151,19 @@ article{
 }
 
 article#top{
+    background-image: linear-gradient(to right, var(--cor3), black);
     width: 70%;
     height: auto;
+}
+
+#titleprincipal{
+    background-color: white;
+    color: black;
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 20px;
+    border: 3px solid black;
 }
 
 #menvoy{
