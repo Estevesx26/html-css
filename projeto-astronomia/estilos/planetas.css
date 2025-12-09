@@ -60,13 +60,13 @@ header{
 }
 
 main{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
     margin: auto;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
 }
 
 
@@ -77,6 +77,7 @@ section{
     
     display: flex;
     align-items: center;
+    width: 100vw;
 
 }
 
@@ -124,17 +125,14 @@ section{
     border-radius: 20px 0px 20px 0px;
 }
 
-/* esconde o checkbox */
 .toggle {
     display: none;
 }
 
-/* quando clicar no botão, aparece o texto */
 .toggle:checked ~ .textmenu {
     display: block;
 }
 
-/* estilização do botão */
 .botao {
     display: inline-block;
     padding: 8px 12px;
@@ -150,7 +148,6 @@ section{
     background: #555;
 }
 
-/* bloco individual de cada curiosidade */
 .menucuriosidades {
     background-color: rgba(0, 0, 0, 0.404);
     padding: 10px;
@@ -160,6 +157,7 @@ section{
 }
 
 article{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor3));
     margin-top: 20px;
     width: 90%;
 }
