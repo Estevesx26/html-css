@@ -81,7 +81,7 @@ section{
 }
 
 h2{
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor6));
     margin: 20px;
     padding: 10px;
     text-align: center;
@@ -90,7 +90,7 @@ h2{
 }
 
 article{
-    background-color: darkkhaki;
+    background-image: linear-gradient(to right, #a011ff9d, violet);
     width: 80%;
     padding: 10px;
     margin: 10px auto;

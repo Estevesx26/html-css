@@ -118,13 +118,13 @@ nav > ul > li > ul > li > a:hover{
 }
 
 h1{
-    background-color: #0D0D0D;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     text-align: center;
     margin: 30px auto;
     padding: 10px;
-    width: 200px;
+    width: 400px;
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid rgb(3, 3, 3);
 }
 
 main#telainicial{
@@ -156,24 +156,16 @@ article{
     border-radius: 20px;
 }
 
-#subprincipal{
+#subprincipal{ 
     background-color: rgba(0, 0, 0, 0.456);
     border: 2px solid rgba(255, 255, 255, 0.334);
-    line-height: 25px;
-    font-size: 1.2em;
-    margin-top: 50px;
-    width: 70%;
+    line-height: 1.5;
+    font-size: 1.1em;
+    margin: 50px auto 0;
+    width: 90%;
+    max-width: 400px;
 }
 
-#titleprincipal{
-    background-color: white;
-    color: black;
-    margin: 20px auto;
-    padding: 10px;
-    width: 60%;
-    border-radius: 20px;
-    border: 3px solid black;
-}
 
 #menvoy{
      background-image: url(../imagens/Espaconave_Voyager.jpg);
