@@ -2,15 +2,9 @@
 
 /*Arquivo para celular*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif
-}
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
 :root{
     --cor1: #0D0D0D;
@@ -20,8 +14,14 @@
     --cor5: #1B263B;
     --cor6: #3D1A54;
 
-    --fonte-destaque1: 'Finger Paint',cursive;
-    --font-destaque2: 'Roboto Mono', cursive;
+    --fonte-destaque1: 'Patrick Hand', cursive;/*textos*/
+    --fonte-titulo: 'Orbitron', sans-serif;/*titulos*/
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 body,html{
@@ -74,7 +74,8 @@ nav{
     font-size: 1.6em;
     margin: auto;
     border-top: 2px solid gray;
-    user-select: none; /* impede selecionar o texto */
+    user-select: none; 
+    font-family: var(--font-destaque2);
 }
 
 #home{
@@ -126,6 +127,8 @@ nav > ul > li > ul > li > a:hover{
     width: 70%;
     border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0.445);
+
+    font-family: var(--fonte-titulo);
 }
 
 main#telainicial{
@@ -160,8 +163,9 @@ article{
     border: 2px solid rgba(255, 255, 255, 0.334);
     box-shadow: 5px 5px 5px 5px rgb(255, 255, 255);
     line-height: 1.5;
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin: 20px auto;
+    font-family: var(--fonte-destaque1);
 }
 
 
@@ -208,6 +212,8 @@ article{
     text-align: center;
     width: 50%;
     margin:10px auto;
+
+    font-family: var(--fonte-titulo);
 }
 
 .caixa {
@@ -224,6 +230,8 @@ article{
 
     border: 2px solid white;
     border-radius: 10px;
+
+    font-family: var(--fonte-destaque1);
 }
 
 .bot {
@@ -258,6 +266,9 @@ footer{
     text-align: center;
     background-color: #2d014ddc;
     border-top: 2px solid rgba(77, 77, 77, 0.467);
+
+    font-family: var(--fonte-destaque1);
+    font-size: 1.2em;
 }
 
 footer > p{
@@ -329,6 +340,10 @@ footer > a:hover{
     .caixa {
         width: 100%;
         height: 180px;
+    }
+
+    div{
+        margin: 0px;
     }
 
     footer{

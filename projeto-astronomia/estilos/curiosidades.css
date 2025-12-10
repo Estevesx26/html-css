@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+*{
+    font-family: var(--font-destaque2)
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 :root{
     --cor1: #0D0D0D;
@@ -12,11 +14,8 @@
     --cor5: #1B263B;
     --cor6: #3D1A54;
 
-    --fonte-destaque1: 'Finger Paint',cursive;
-    --font-destaque2: 'Roboto Mono', cursive;
+    --fonte-destaque1: 'Patrick Hand', cursive;
 }
-
-
 
 header{
     background-position: center center;
@@ -80,6 +79,10 @@ section{
     margin-right: 10px;
 }
 
+.left{
+    width: 40%;
+}
+
 h2{
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor6));
     margin: 20px;
@@ -116,13 +119,21 @@ article{
 .text{
     text-align: left;
     line-height: 1.3em;
-    font-size: 1.2em;
+    font-size: 1.4em;
     height: auto;
+    min-width: 200px;
+    max-width: 500px;
+    font-family: var(--fonte-destaque1);
 }
 
 .textarticle{
     line-height: 30px;
     font-size: 1.2em;
+}
+
+.textvoy{
+    font-family: var(--fonte-destaque1);
+    font-size: 1.1em;
 }
 
 .video-container {
@@ -156,4 +167,23 @@ article{
 
 #tempo{
     background-image: url(../imagens/espaço-time.jpg);
+}
+
+@media screen and (min-width: 992px){
+    .divisao{
+     display: flex;
+    justify-content: space-between;
+    }
+
+    .textvoy{
+        width: 50%;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    main{
+        background-attachment: fixed;
+        border-radius: 0px;
+    }
+
 }
