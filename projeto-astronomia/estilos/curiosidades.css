@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap');
+
 :root{
     --cor1: #0D0D0D;
     --cor2: #0A0F3C;
@@ -14,7 +18,9 @@
     --cor5: #1B263B;
     --cor6: #3D1A54;
 
-    --fonte-destaque1: 'Patrick Hand', cursive;
+    --fonte-destaque1: 'Patrick Hand', cursive;/*textos*/
+    --fonte-titulo: 'Orbitron', sans-serif;/*titulos*/
+    --fonte-menu: 'Rajdhani', sans-serif;/*menu*/
 }
 
 header{
@@ -90,6 +96,8 @@ h2{
     text-align: center;
     border-radius: 20px;
     border: 2px solid white;
+
+    font-family: var(--fonte-titulo);
 }
 
 article{
@@ -114,6 +122,8 @@ article{
     text-align: center;
     border-radius: 20px;
     border: 3px solid black;
+
+    font-family: var(--fonte-titulo);
 }
 
 .text{
