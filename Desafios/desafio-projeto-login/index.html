@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="estilo/style.css">
 
     <link rel="stylesheet" href="estilo/mediaquery.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
 </head>
 <body>
     <main>
@@ -20,6 +23,28 @@
                 <p>Seja Bem vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
                 <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+person
+</span>
+                            <input type="email" name="login" id="ilogin" placeholder="seu e-mail" required>
+
+                            <label for="ilogin"></label>
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+vpn_key
+</span>
+                            <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="16">
+
+                            <label for="isenha"></label>
+
+                            <input type="submit" value="Entrar">
+                            <a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">
+mail
+</span></a>
+                    </div>
 
                 </form>
             </div>
