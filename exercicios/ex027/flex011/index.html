@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+            width: 90vw;
+            margin: auto;
+            display: flex;
+
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            flex-basis: 200px;
+        }
+
+        #num1{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        #num2{
+            flex-grow: 2;
+            flex-shrink: 0;
+
+        }
+
+        #num3{
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+
+    
+    </style>
+
+</head>
+<body>
+    <div class="conteiner">
+
+        <div class="item" id="num1">A</div>
+        <div class="item" id="num2">B</div>
+        <div class="item" id="num3">C</div>
+    </div>
+</body>
+</html>
