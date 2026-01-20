@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexmenu</title>
-
+    <title>menu-flex</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <style>
-
         *{
             margin: 0px;
             padding: 0px;
@@ -16,192 +13,185 @@
             user-select: none;
         }
 
-        div#cabeca{
+        body{
+            background-color: blueviolet;
+        }
+
+        header{
+            background-color: brown;
+            text-align: center;
+        }
+
+        #menu-lateral{
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            transform: translateX(-100%);
+            transition: transform 0s ease;
+            z-index: 1000;
+        }
+
+        #menu-lateral.ativo{
+            transform: translateX(0);
+        }
+
+        .topo-menu{
+            background-color: darkgoldenrod;
+            display: flex;
+            justify-content: center;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgb(85, 85, 85);
+        }
+
+        #fechar{
+            background-color: cornflowerblue;
+            width: 100vw;
+            padding: 10px;
+            font-size: 32px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #burger{
+            background-color: chartreuse;
+            width: 100vw;
+            text-align: center;
+            cursor: pointer;
+            font-size: 32px;
+        }
+
+        li{
+            background-color: burlywood;
             display: flex;
             justify-content: center;
         }
 
-        h1{
-            font-size: 30px;
+        a{
+            text-decoration: none;
             padding: 10px;
-            text-align: center;
-            width: 200px;
-            border-radius: 20px;
         }
 
-        header{
-            background-color: rgb(94, 116, 137);
+        a:hover{
+            background-color: chocolate;
+            width: 110px;
             text-align: center;
         }
 
-        span#burger{
-            background-color: black;
-            color: white;
-            width: 100vw;
-            font-size: 35px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: lightgray;
+    }
 
-        span#burger:hover{
-            background-color: rgb(201, 201, 201);
-            color: rgb(255, 255, 255);
-        }
+    #unico{
+        display: flex;
+        align-items: center;
+    }
 
-        nav#itens{
-            display: none;
-        }
+    header{
+        width: 100vw;
+        order: 1;
+        padding: 10px;
+    }
 
-        nav#itens:hover{
-            display: block;
-        }
-
-        ul{
-            list-style: none;
-        }
-
-        ul > li{
+    #burger{
+            background-color: darkgreen;
             padding: 10px;
-            color: white;
-            border-top: 1px solid rgba(0, 0, 0, 0.368);
+            width: 50px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 36px;
         }
 
-        ul > li:hover{
-            background-color: rgb(68, 76, 85);
-            color: rgba(165, 165, 165, 0.485);
+    #menu-lateral{
+            width: 260px;
+            height: 100vh;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            z-index: 1000;
         }
 
+}
 
-        main{
-            background-color: lightsalmon;
-            width: 70%;
-            margin:50px auto;
-            padding: 20px;
-            border-radius: 20px;
-            border: 1px solid black;
-            box-shadow: 2px 2px 2px 2px;
+@media (min-width: 1025px) {
+    body {
+        background-color: darkslategray;
+    }
+
+    #unico{
+        display: flex;
+        align-items: center;
+    }
+
+    header{
+        width: 100vw;
+        order: 1;
+        padding: 10px;
+    }
+
+    #burger{
+            background-color: darkgreen;
+            padding: 10px;
+            width: 50px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 36px;
         }
 
-
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-             body{
-                background-color: blueviolet;
-             }
-
-             header{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-             }
-
-             #cabeca{
-                order: 1;
-             }
-
-             nav#itens{
-                display: block;
-             }
-
-             nav#itens ul{
-                display: flex;
-             }
-
-             .material-icons{
-                display: none;
-             }
-
-             ul > li{
-                border: none;
+    #menu-lateral{
+            width: 260px;
+            height: 100vh;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+            z-index: 1000;
         }
 
-        }
-
-
-        @media screen and (min-width: 1024px){
-
-            body{
-                background-color: brown;
-             }
-
-             header{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-             }
-
-             #cabeca{
-                order: -1;
-             }
-
-             nav#itens{
-                display: block;
-             }
-
-             nav#itens ul{
-                display: flex;
-             }
-
-             .material-icons{
-                display: none;
-             }
-
-             ul > li{
-                border: none;
-        }
-
-            ul > li{
-                padding-right: 70px;
-            }
-
-        }
-
-
+}
     </style>
-
 </head>
-<body onresize="menuTamanho()">
-
-    <header>
-
-        <div id="cabeca">
-            <h1>Menu Flex</h1>
-        </div>
-
-        <span class="material-icons" id="burger" onclick="clickMenu()">
-         menu
+<body>
+    <div id="unico">
+        <header>
+            <h1>Menu flex</h1>
+        </header>
+        <span class="material-icons" id="burger">
+          menu
         </span>
+    </div>
 
-        <nav id="itens">
-            <ul>
-                <li>opção 1</li>
-                <li>opção 2</li>
-                <li>opção 3</li>
-                <li>opção 4</li> 
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel totam expedita molestiae, praesentium velit, pariatur iure commodi veniam delectus nemo ducimus quas ipsam. Accusantium assumenda, voluptates provident fugit nihil dolore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis mollitia dicta beatae. Soluta saepe cupiditate est. Pariatur ducimus quo officiis. Placeat temporibus ad mollitia optio doloribus libero voluptatum obcaecati iste.</p>
-    </main>
+    <nav id="menu-lateral">
+        <div class="topo-menu">
+            <span class="material-icons" id="fechar">
+             menu
+            </span>
+        </div>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="">Contatos</a></li>
+                    <li><a href="">Configuração</a></li>
+                </ul>
+    </nav>
 
     <script>
+        const menu = document.getElementById('menu-lateral')
+        const abrir = document.getElementById('burger')
+        const fechar = document.getElementById('fechar')
 
-         function menuTamanho(){
-            if(window.innerWidth >= 768){
-                itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
+        abrir.onclick =()=>{
+            menu.classList.add('ativo')
         }
 
-        function clickMenu(){
-            if(itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
+        fechar.onclick =()=>{
+            menu.classList.remove('ativo')
         }
+
     </script>
+    
 </body>
 </html>
