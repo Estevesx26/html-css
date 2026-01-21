@@ -27,8 +27,9 @@ header{
 }
 
 header > h1{
-    border: 1px dotted black;
+    /*border: 1px dotted black; -- consegue ver o tamanho da caixa*/
     flex: 0 0 200px;
+    text-shadow: 2px 2px 0px black;
 }
 
 header > nav > a{
@@ -48,7 +49,7 @@ header > nav > a:hover{
 }
 
 nav{
-    border: 1px dotted black;
+    /*border: 1px dotted black; -- consegue ver o tamanho da caixa*/
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
