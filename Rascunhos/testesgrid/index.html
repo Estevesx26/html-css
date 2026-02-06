@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            user-select: none;
+        }
+        body{
+            background-color: #2C2833;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section.principal{
+            background-color: black;
+            height: 100%;
+            border-radius: 20px;
+            padding: 20px;
+            height: 80vh;
+            width: 80vw;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+            grid-template-rows: auto auto auto ;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        div.item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color:#6C2BED ;
+            color: white;
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        div.item:hover{
+            background-color: white;
+            color: #6C2BED;
+            transition: .3s;
+            transform:translateY(-10px) scale(1.03);
+            box-shadow:0 20px 40px rgba(255, 255, 255, 0.6);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+        <section class="principal">
+            <div class="item">Helena</div>
+            <div class="item">Ana julia</div>
+            <div class="item">Maria Helena</div>
+            <div class="item">Vitória</div>
+            <div class="item">Carol</div>
+            <div class="item">Maria Vitória</div>
+            <div class="item">Carolina</div>
+            <div class="item">Emanuely</div>
+        </section>
+</body>
+</html>
