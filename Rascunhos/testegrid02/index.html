@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            background-color: darkblue;
+            height: 600px;
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-auto-rows: 100px;
+            gap: 16px;
+        }
+
+        .item{
+            background-color: chartreuse;
+            text-align: center;
+            padding: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        <div class="item">Itens</div>
+        
+    </main>
+</body>
+</html>
