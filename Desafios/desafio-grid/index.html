@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 100px 50px 1fr 50px;
+        }
+
+        .topo{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 1.6em;    
+            background-color: red;
+            grid-area: 1/1/2/4;
+        }
+
+        .menu{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 1.6em;    
+            background-color: green;
+            grid-area: 2/1/3/4;
+        }
+
+        .principal{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 1.6em;    
+            background-color: blue;
+            grid-area: 3/1/4/3;
+        }
+
+        .secundario{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 1.6em;    
+            background-color: yellow;
+            grid-area: 3/3/4/4;
+        }
+
+        .rodape{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 1.6em;    
+            background-color: violet;
+            grid-area: 4/1/4/4;
+        }
+    </style>
+</head>
+<body>
+    <header class="topo">topo</header>
+
+    <nav class="menu">menu</nav>
+
+    <main class="principal">principal</main>
+
+    <section class="secundario">secundario</section>
+
+    <footer class="rodape">rodape</footer>
+</body>
+</html>
